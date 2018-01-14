@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=vietnamese" rel="stylesheet">
+    <link rel="stylesheet" href="js/plugins/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/swiper/js/swiper.min.js"></script>
+    <script src="js/plugins/swiper/js/swiper.esm.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            var productSwiper = new Swiper('#swiper-product', {
+                'slidesPerView' : 3,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                breakpoints:{
+                    575: {
+                        'slidesPerView' : 1,
+                    },
+                    767: {
+                        'slidesPerView' : 2,
+                    }
+                }
+            })
+
+            var newsSwiper = new Swiper('#swiper-news', {
+                'slidesPerView' : 1,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            })
+        })
+    </script>
+
+    <title>TigerD</title>
+</head>
+<body>
+<div class="page">
+    <!--HEADER-->
+    <header class="sticky-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 icon-collect">
+                    <div class="d-flex">
+                        <span class="mr-2">
+                            <a href="#"><img src="images/fb-icon.png" class="img-fluid" title="FaceBook" alt="FaceBook TigerD"></a>
+                        </span>
+                        <span class="mr-2">
+                            <a href="#"><img src="images/instagram-icon.png" class="img-fluid" title="Instagram" alt="Instagram TigerD"></a>
+                        </span>
+                        <span class="mr-2">
+                            <a href="#"><img src="images/twiter-icon.png" class="img-fluid" title="Twitter" alt="Twitter TigerD"></a>
+                        </span>
+                        <span>
+                            <a href="#"><img src="images/youtube-icon.png" class="img-fluid" title="Youtube" alt="Youtube TigerD"></a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-md-8 company-info">
+                    <div class="d-flex justify-content-end">
+                        <div class="each-info ">
+                            <img src="images/email-icon.png" class="img-fluid d-inline" alt="Email">
+                            <a href="mailto:meo@tigerd.vn" class="d-inline">meo@tigerd.vn</a>
+                        </div>
+                        <div class="each-info ">
+                            <img src="images/phone-icon.png" class="img-fluid d-inline" alt="Phone">
+                            <span class="d-inline">
+                                        <a href="call:0943722227" class="d-inline">0943 722 227</a> -
+                                        <a href="call:01666277772" class="d-inline">01666 277 772</a>
+                                    </span>
+                        </div>
+                        <div class="each-info">
+                            <a href="#">
+                                <img src="images/cart-icon.png" class="img-fluid d-inline mr-2" alt="Cart">
+                                <span class="number-item">0</span>
+                            </a>
+                        </div>
+                        <div class="each-info">
+                            <a href="#"><i class="fa fa-user"></i> <span class="user-text">Đăng Nhập</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--END HEADER-->
+
+
+    <!--LOGO-->
+    <div class="logo-container">
+        <div class="container">
+            <div class="row">
+                <a href="#" class="logo mx-auto">
+                    <img src="images/logo.png" class="img-fluid" alt="TigerD">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--END LOGO-->
+
+    <!--NAVIGATION-->
+    <div class="navigation-container">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-light navbar-toggleable-md">
+                <a href="#" class="navbar-brand h1">TIGERD</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="mainNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav nav-fill w-100 align-items-start" id="navigation-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Product
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Quần Tây</a>
+                                <a class="dropdown-item" href="#">Áo Sơ Mi</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0 form-search" method="POST">
+                        <div class="search-container">
+                            <button class="btn btn-search-trigger" type="button" data-toggle="collapse" data-target="#search-wrapper" aria-controls="search-wrapper" aria-expanded="false"><i class="fa fa-search"></i></button>
+                            <div id="search-wrapper" class="collapse">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button type="submit" class="btn btn-search">Tìm Kiếm</button>
+                                    </div>
+                                    <input type="text" name="keywords" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--END NAVIGATION-->
+
+    <section class="page-section contact-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="map-wrapper">
+
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-wrapper">
+                        <form action="" method="POST" class="form-contact">
+                            <div class="form-group">
+                                <label for="fullname">Họ Tên Khách Hàng (*)</label>
+                                <input type="text" class="form-control" name="fullname">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Điện Thoại Khách Hàng (*)</label>
+                                <input type="text" class="form-control" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Khách Hàng (*)</label>
+                                <input type="text" class="form-control" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Nội dung</label>
+                                <textarea name="message" rows="10" class="form-control"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Gửi" class="btn btn-outline-primary">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--TESTIMONIAL-->
+    <section class="testimonial-container">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="testimonial-inner">
+                        <div class="carousel slide" id="carouselTestimonial" data-ride="carousel" data-interval="5000">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselTestimonial" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselTestimonial" data-slide-to="1"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <figure>
+                                        <img src="images/news01.png" class="rounded img-fluid" alt="">
+                                        <figcaption>
+                                            <h4 class="title-caption">Lorem text</h4>
+                                            <p class="content-caption">
+                                                Lorem text
+                                            </p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="carousel-item">
+                                    <figure>
+                                        <img src="images/news01.png" class="rounded img-fluid" alt="">
+                                        <figcaption>
+                                            <h4 class="title-caption">Lorem text</h4>
+                                            <p class="content-caption">
+                                                Lorem text
+                                            </p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END TESTIMONIAL-->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-4">
+                    <div class="block-footer">
+                        <h3 class="title-footer">About Tigerd</h3>
+                        <ul class="list-footer">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Product Us</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4">
+                    <div class="block-footer">
+                        <h3 class="title-footer">Guide</h3>
+                        <ul class="list-footer">
+                            <li><a href="#">Regulation & Policy</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Customer Support</a></li>
+                            <li><a href="#">Ordering Guide</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-4">
+                    <div class="block-subcribe">
+                        <h3 class="title-subcribe">NEWSLETTER SIGN UP</h3>
+                        <p class="sub-title">Sign up to get information and more...</p>
+                        <form action="" method="POST" id="form-subcribe">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <input type="text" name="ema_subcribe" class="form-control">
+                                    <button type="submit" class="btn btn-subcribe"><i class="fa fa-chevron-right"></i></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>  <!-- end page -->
+
+</body>
+</html>

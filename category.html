@@ -43,6 +43,13 @@
                     prevEl: '.swiper-button-prev',
                 },
             })
+
+            var hotProductSwiper = new Swiper('#hotProductSwiper',{
+                'slidesPerView' : 1,
+                autoplay: {
+                    delay: 3000
+                }
+            })
         })
     </script>
 
@@ -167,22 +174,24 @@
     <div class="banner-container">
         <div class="container">
             <div class="row">
-                <div class="banner-inner">
-                    <div id="mainSlider" class="carousel slide" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
-                            <li data-target="#mainSlider" data-slide-to="1"></li>
-                            <li data-target="#mainSlider" data-slide-to="2"></li>
-                        </ol>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="images/banner01.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/banner01.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100" src="images/banner01.jpg" alt="Third slide">
+                <div class="col">
+                    <div class="banner-inner">
+                        <div id="mainSlider" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#mainSlider" data-slide-to="0" class="active"></li>
+                                <li data-target="#mainSlider" data-slide-to="1"></li>
+                                <li data-target="#mainSlider" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="images/banner01.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/banner01.jpg" alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="images/banner01.jpg" alt="Third slide">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -192,131 +201,66 @@
     </div>
     <!-- END BANNER-->
 
-    <!--PRODUCT-->
-    <section class="product-container page-section">
+    <!--BREADCRUMB-->
+    <section class="breadcrumb-section">
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="product-inner">
-                        <h2 class="title-section mx-auto">Tiger-d Products</h2>
-
-                        <div class="product-body">
-                            <div class="swiper-container" id="swiper-product">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="each-product">
-                                            <figure>
-                                                <a href="#"><img src="images/sp01.png" class="img-fluid mx-auto mb-2" alt="Sản Phẩm 01"></a>
-                                                <figcaption>
-                                                    <p class="product-name"><a href="#">Sản Phẩm 01</a></p>
-                                                    <p class="price discount">10,000,000 VND</p>
-                                                    <p class="price">10,000,000 VND</p>
-                                                    <button type="button" class="btn btn-outline-default btn-add-to-cart">Add To Cart</button>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="each-product">
-                                            <figure>
-                                                <a href="#"><img src="images/sp02.png" class="img-fluid mx-auto mb-2" alt="Sản Phẩm 01"></a>
-                                                <figcaption>
-                                                    <p class="product-name"><a href="#">Sản Phẩm 01</a></p>
-                                                    <p class="price">10,000,000 VND</p>
-                                                    <button type="button" class="btn btn-outline-default btn-add-to-cart">Add To Cart</button>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="each-product">
-                                            <figure>
-                                                <a href="#"><img src="images/sp01.png" class="img-fluid mx-auto mb-2" alt="Sản Phẩm 01"></a>
-                                                <figcaption>
-                                                    <p class="product-name"><a href="#">Sản Phẩm 01</a></p>
-                                                    <p class="price">10,000,000 VND</p>
-                                                    <button type="button" class="btn btn-outline-default btn-add-to-cart">Add To Cart</button>
-                                                </figcaption>
-                                            </figure>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- If we need navigation buttons -->
-                                <div class="swiper-button-prev swiper-button"></div>
-                                <div class="swiper-button-next swiper-button"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </div>
     </section>
-    <!--END PRODUCT-->
 
-    <!--NEWS-->
-    <section class="news-container page-section">
+    <!--CATEGORY-->
+    <section class="page-section category-page">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <div class="news-inner">
-                        <h2 class="title-section mx-auto">Tiger-d News</h2>
-                        <div class="news-body">
-                            <div class="swiper-container" id="swiper-news">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="each-news">
-                                            <div class="media">
-                                                <a href="#"><img src="images/news01.png" class="mr-5" alt=""></a>
-                                                <div class="media-body">
-                                                    <h3 class="news-name"><a href="#">Tin Trong ngày</a></h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est debitis, quo reprehenderit pariatur eum delectus autem assumenda sint facere totam, maxime nostrum commodi quasi laborum nesciunt asperiores beatae quam. Id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab minus dicta, iste assumenda ad labore esse. Laborum perspiciatis repudiandae aliquam facere soluta, dolorum placeat adipisci ratione, ex eaque officia, suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sint consequuntur dolore aliquam, veritatis, commodi dolorum harum tempore, qui voluptatibus, doloribus. Consequuntur perferendis impedit, voluptate excepturi deleniti blanditiis, vitae sed.
-                                                    </p>
-                                                    <a href="#" class="readmore float-right">Read more ...</a>
-                                                </div>
-                                            </div>
-                                            <div class="media">
-                                                <a href="#"><img src="images/news01.png" class="mr-5" alt=""></a>
-                                                <div class="media-body">
-                                                    <h3 class="news-name"><a href="#">Tin Trong ngày</a></h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est debitis, quo reprehenderit pariatur eum delectus autem assumenda sint facere totam, maxime nostrum commodi quasi laborum nesciunt asperiores beatae quam. Id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab minus dicta, iste assumenda ad labore esse. Laborum perspiciatis repudiandae aliquam facere soluta, dolorum placeat adipisci ratione, ex eaque officia, suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sint consequuntur dolore aliquam, veritatis, commodi dolorum harum tempore, qui voluptatibus, doloribus. Consequuntur perferendis impedit, voluptate excepturi deleniti blanditiis, vitae sed.</p>
-                                                    <a href="#" class="readmore float-right">Read more ...</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="each-news">
-                                            <div class="media">
-                                                <a href="#"><img src="images/news01.png" class="mr-5" alt=""></a>
-                                                <div class="media-body">
-                                                    <h3 class="news-name"><a href="#">Tin Trong ngày</a></h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est debitis, quo reprehenderit pariatur eum delectus autem assumenda sint facere totam, maxime nostrum commodi quasi laborum nesciunt asperiores beatae quam. Id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab minus dicta, iste assumenda ad labore esse. Laborum perspiciatis repudiandae aliquam facere soluta, dolorum placeat adipisci ratione, ex eaque officia, suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sint consequuntur dolore aliquam, veritatis, commodi dolorum harum tempore, qui voluptatibus, doloribus. Consequuntur perferendis impedit, voluptate excepturi deleniti blanditiis, vitae sed.
-                                                    </p>
-                                                    <a href="#" class="readmore float-right">Read more ...</a>
-                                                </div>
-                                            </div>
-                                            <div class="media">
-                                                <a href="#"><img src="images/news01.png" class="mr-5" alt=""></a>
-                                                <div class="media-body">
-                                                    <h3 class="news-name"><a href="#">Tin Trong ngày</a></h3>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est debitis, quo reprehenderit pariatur eum delectus autem assumenda sint facere totam, maxime nostrum commodi quasi laborum nesciunt asperiores beatae quam. Id. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab minus dicta, iste assumenda ad labore esse. Laborum perspiciatis repudiandae aliquam facere soluta, dolorum placeat adipisci ratione, ex eaque officia, suscipit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam sint consequuntur dolore aliquam, veritatis, commodi dolorum harum tempore, qui voluptatibus, doloribus. Consequuntur perferendis impedit, voluptate excepturi deleniti blanditiis, vitae sed.</p>
-                                                    <a href="#" class="readmore float-right">Read more ...</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="col-md-9 order-sm-12">
+                    <div class="category-inner">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-4">
+                                <div class="each-cate">
+                                    <figure class="figure" >
+                                        <a href="#" ><img src="images/sp01.png" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure." ></a>
+                                        <figcaption class="figure-caption">
+                                            <h2 class="product-name"><a href="#">Quần Tây 01</a></h2>
+                                            <p class="price discount">10,000,000 VND</p>
+                                            <p class="price">10,000,000 VND</p>
+                                            <button type="button" class="btn btn-outline-default btn-add-to-cart">Add To Cart</button>
+                                        </figcaption>
+                                    </figure>
                                 </div>
-
-                                <!-- If we need navigation buttons -->
-                                <div class="swiper-button-prev swiper-button">
-                                    <span class="btn-news-next">
-                                        <i class="fa fa-chevron-left"></i>
-                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 order-sm-1">
+                    <div class="each-sidebar cate-sidebar">
+                        <h3 class="title-sidebar">Danh Mục Sản Phẩm</h3>
+                        <div class="box">
+                            <ul class="list-cate list-cate-sidebar">
+                                <li><a href="#">Quần Tây</a></li>
+                                <li><a href="#">Sơ Mi Nam</a></li>
+                                <li><a href="#">Vest</a></li>
+                                <li><a href="#">Đầm</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="each-sidebar cate-sidebar">
+                        <h3 class="title-sidebar">Các Sản Phẩm Nổi Bật</h3>
+                        <div class="swiper-container" id="hotProductSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/sp01.png" class="img-fluid" alt="">
                                 </div>
-                                <div class="swiper-button-next swiper-button">
-                                    <span class="btn-news-next">
-                                        <i class="fa fa-chevron-right"></i>
-                                    </span>
+                                <div class="swiper-slide">
+                                    <img src="images/sp01.png" class="img-fluid" alt="">
                                 </div>
                             </div>
                         </div>
@@ -325,32 +269,8 @@
             </div>
         </div>
     </section>
-    <!--END NEWS-->
 
-    <!--VIDEO FANPAGE-->
-    <section class="video-fanpage-container page-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="video-section">
-                        <h3 class="title-section-h3">Tiger-d <br> Videos</h3>
-                        <div class="video-wrapper">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <div class="fanpage-section">
-                        <h3 class="title-section-h3">Tiger-d <br> FanPage</h3>
-                        <div class="fanpage-wrapper">
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--END VIDEO FANPAGE-->
+    <!--END CATEGORY-->
 
     <!--TESTIMONIAL-->
     <section class="testimonial-container">
